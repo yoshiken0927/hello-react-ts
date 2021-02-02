@@ -1,0 +1,39 @@
+{
+  "name": "hello-react2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "npm-watch",
+    "watch2": "webpack --watch",
+    "watch3": "tsc -w"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "watch": {
+    "build": "{src,test}/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-watch": "^0.7.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "express": "^4.17.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
